@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <title>login-page</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container-fluid bg-primary py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-white pr-3" href="">FAQs</a>
+                        <span class="text-white">|</span>
+                        <a class="text-white px-3" href="">Help</a>
+                        <span class="text-white">|</span>
+                        <a style="color: aqua;" class="text pl-3 active" href="login.html">My Account</a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center text-lg-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-white px-3" href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-white px-3" href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="text-white px-3" href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="text-white px-3" href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-white pl-3" href="">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="" class="navbar-brand">
+                    <div class="logo">
+                        <ul><img src="D`Ken.jpg" alt="..."/> </ul>
+                    </div>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        
+                        <a href="about.html" class="nav-item nav-link">Tentang kami</a>
+                        <a href="service.html" class="nav-item nav-link">Layanan kami</a>
+                        <a href="pricing.html" class="nav-item nav-link">Harga</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- form login -->
+    <div class="container2">
+        <div class="form-box">
+            
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toogle-button" onclick="login()">Login</button>
+                <button type="button" class="toogle-button" onclick="register()">register</button>
+            </div>
+           
+            <form action="#" class="input-grup" id="login">
+                <input type="text" class="input-field" placeholder="Username" required>
+                <input type="password" class="input-field" placeholder=" Password" required>
+                <input type="checkbox" class="checkbox"><span>remember me</span>
+                <button type="submit" href="index.html" class="submit-btn">LOGIN</button>
+            </form>
+
+            <form action="#" class="input-grup" id="register">
+                <input type="text" class="input-field" placeholder="Username" required>
+                <input type="emali" class="input-field" placeholder=" email ID" required>
+                <input type="checkbox" class="checkbox"><span>I agree with the tern & condition</span>
+                <button type="submit" href="" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var loginView = document.getElementById("login")
+        var registerView = document.getElementById("register")
+        var btnView = document.getElementById("btn")
+
+        function register(){
+            loginView.style.left= "400px";
+            registerView.style.left= "50px";
+            buttonView.style.left= "100px";
+        }
+
+        function login(){
+            loginView.style.left= "50px";
+            registerView.style.left= "450px";
+            buttonView.style.left= "0px";
+        }
+    </script>
+
+</body>
+</html>
